@@ -1,0 +1,35 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           DELTA_FTE_T4   R-squared:                       0.031
+Model:                            OLS   Adj. R-squared:                  0.011
+Method:                 Least Squares   F-statistic:                     3.282
+Date:                Wed, 14 Oct 2026   Prob (F-statistic):            0.00216
+Time:                        21:26:57   Log-Likelihood:                -1277.9
+No. Observations:                 357   AIC:                             2572.
+Df Residuals:                     349   BIC:                             2603.
+Df Model:                           7                                         
+Covariance Type:                  HC1                                         
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -2.5500      2.603     -0.980      0.327      -7.651       2.551
+STATE          3.4309      2.737      1.254      0.210      -1.934       8.795
+KFC            5.3250      2.698      1.974      0.048       0.037      10.613
+ROY           -1.0437      3.331     -0.313      0.754      -7.572       5.484
+WENDYS        -0.7455      3.917     -0.190      0.849      -8.423       6.932
+NJ_KFC        -5.5653      2.943     -1.891      0.059     -11.334       0.204
+NJ_ROY        -1.2629      3.532     -0.358      0.721      -8.186       5.660
+NJ_WENDYS      0.4013      4.302      0.093      0.926      -8.031       8.834
+==============================================================================
+Omnibus:                       35.664   Durbin-Watson:                   2.177
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               92.344
+Skew:                          -0.467   Prob(JB):                     8.87e-21
+Kurtosis:                       5.310   Cond. No.                         17.5
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)
+
+JOINT HETEROGENEITY TEST
+Robust F-statistic: 2.490224
+P-value: 0.060120

@@ -1,0 +1,57 @@
+Period,State,Wage_Center,Bin_Lower,Bin_Upper,Count,Percent,Total_Valid_Wages
+February 1992,New Jersey,4.25,4.2,4.3,101,32.1656050955414,314
+February 1992,New Jersey,4.35,4.3,4.4,12,3.821656050955414,314
+February 1992,New Jersey,4.45,4.4,4.5,3,0.9554140127388535,314
+February 1992,New Jersey,4.55,4.5,4.6,52,16.560509554140125,314
+February 1992,New Jersey,4.65,4.6,4.7,20,6.369426751592357,314
+February 1992,New Jersey,4.75,4.7,4.8,38,12.101910828025478,314
+February 1992,New Jersey,4.85,4.8,4.9,13,4.140127388535031,314
+February 1992,New Jersey,4.95,4.9,5.0,2,0.6369426751592357,314
+February 1992,New Jersey,5.05,5.0,5.1,50,15.92356687898089,314
+February 1992,New Jersey,5.15,5.1,5.2,5,1.5923566878980893,314
+February 1992,New Jersey,5.25,5.2,5.3,6,1.910828025477707,314
+February 1992,New Jersey,5.35,5.3,5.4,2,0.6369426751592357,314
+February 1992,New Jersey,5.45,5.4,5.5,1,0.3184713375796179,314
+February 1992,New Jersey,5.55,5.5,5.6,7,2.229299363057325,314
+February 1992,Pennsylvania,4.25,4.2,4.3,26,34.21052631578947,76
+February 1992,Pennsylvania,4.35,4.3,4.4,1,1.3157894736842104,76
+February 1992,Pennsylvania,4.45,4.4,4.5,0,0.0,76
+February 1992,Pennsylvania,4.55,4.5,4.6,13,17.105263157894736,76
+February 1992,Pennsylvania,4.65,4.6,4.7,1,1.3157894736842104,76
+February 1992,Pennsylvania,4.75,4.7,4.8,10,13.157894736842104,76
+February 1992,Pennsylvania,4.85,4.8,4.9,1,1.3157894736842104,76
+February 1992,Pennsylvania,4.95,4.9,5.0,0,0.0,76
+February 1992,Pennsylvania,5.05,5.0,5.1,20,26.31578947368421,76
+February 1992,Pennsylvania,5.15,5.1,5.2,0,0.0,76
+February 1992,Pennsylvania,5.25,5.2,5.3,2,2.631578947368421,76
+February 1992,Pennsylvania,5.35,5.3,5.4,0,0.0,76
+February 1992,Pennsylvania,5.45,5.4,5.5,0,0.0,76
+February 1992,Pennsylvania,5.55,5.5,5.6,2,2.631578947368421,76
+November 1992,New Jersey,4.25,4.2,4.3,0,0.0,318
+November 1992,New Jersey,4.35,4.3,4.4,0,0.0,318
+November 1992,New Jersey,4.45,4.4,4.5,0,0.0,318
+November 1992,New Jersey,4.55,4.5,4.6,0,0.0,318
+November 1992,New Jersey,4.65,4.6,4.7,0,0.0,318
+November 1992,New Jersey,4.75,4.7,4.8,0,0.0,318
+November 1992,New Jersey,4.85,4.8,4.9,0,0.0,318
+November 1992,New Jersey,4.95,4.9,5.0,0,0.0,318
+November 1992,New Jersey,5.05,5.0,5.1,284,89.30817610062893,318
+November 1992,New Jersey,5.15,5.1,5.2,3,0.9433962264150944,318
+November 1992,New Jersey,5.25,5.2,5.3,18,5.660377358490567,318
+November 1992,New Jersey,5.35,5.3,5.4,1,0.3144654088050315,318
+November 1992,New Jersey,5.45,5.4,5.5,1,0.3144654088050315,318
+November 1992,New Jersey,5.55,5.5,5.6,8,2.515723270440252,318
+November 1992,Pennsylvania,4.25,4.2,4.3,20,28.169014084507044,71
+November 1992,Pennsylvania,4.35,4.3,4.4,5,7.042253521126761,71
+November 1992,Pennsylvania,4.45,4.4,4.5,2,2.8169014084507045,71
+November 1992,Pennsylvania,4.55,4.5,4.6,11,15.492957746478872,71
+November 1992,Pennsylvania,4.65,4.6,4.7,0,0.0,71
+November 1992,Pennsylvania,4.75,4.7,4.8,14,19.718309859154928,71
+November 1992,Pennsylvania,4.85,4.8,4.9,0,0.0,71
+November 1992,Pennsylvania,4.95,4.9,5.0,3,4.225352112676056,71
+November 1992,Pennsylvania,5.05,5.0,5.1,14,19.718309859154928,71
+November 1992,Pennsylvania,5.15,5.1,5.2,0,0.0,71
+November 1992,Pennsylvania,5.25,5.2,5.3,1,1.4084507042253522,71
+November 1992,Pennsylvania,5.35,5.3,5.4,0,0.0,71
+November 1992,Pennsylvania,5.45,5.4,5.5,0,0.0,71
+November 1992,Pennsylvania,5.55,5.5,5.6,0,0.0,71

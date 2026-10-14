@@ -1,0 +1,156 @@
+
+========== MODEL i ==========
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           DELTA_FTE_T4   R-squared:                       0.011
+Model:                            OLS   Adj. R-squared:                  0.008
+Method:                 Least Squares   F-statistic:                     3.810
+Date:                Wed, 14 Oct 2026   Prob (F-statistic):             0.0517
+Time:                        21:26:57   Log-Likelihood:                -1281.6
+No. Observations:                 357   AIC:                             2567.
+Df Residuals:                     355   BIC:                             2575.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -2.1269      1.074     -1.980      0.048      -4.239      -0.015
+STATE          2.3258      1.192      1.952      0.052      -0.018       4.669
+==============================================================================
+Omnibus:                       34.698   Durbin-Watson:                   2.168
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               84.340
+Skew:                          -0.475   Prob(JB):                     4.85e-19
+Kurtosis:                       5.183   Cond. No.                         4.42
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+========== MODEL ii ==========
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           DELTA_FTE_T4   R-squared:                       0.023
+Model:                            OLS   Adj. R-squared:                  0.009
+Method:                 Least Squares   F-statistic:                     1.663
+Date:                Wed, 14 Oct 2026   Prob (F-statistic):              0.143
+Time:                        21:26:57   Log-Likelihood:                -1279.3
+No. Observations:                 357   AIC:                             2571.
+Df Residuals:                     351   BIC:                             2594.
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -1.6972      1.210     -1.402      0.162      -4.078       0.683
+STATE          2.3039      1.196      1.927      0.055      -0.047       4.655
+KFC            0.4922      1.299      0.379      0.705      -2.063       3.047
+ROY           -2.2170      1.310     -1.693      0.091      -4.793       0.359
+WENDYS        -0.5120      1.498     -0.342      0.733      -3.459       2.435
+OWNED          0.3080      1.094      0.282      0.778      -1.843       2.459
+==============================================================================
+Omnibus:                       37.699   Durbin-Watson:                   2.172
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               93.279
+Skew:                          -0.514   Prob(JB):                     5.56e-21
+Kurtosis:                       5.284   Cond. No.                         5.76
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+========== MODEL iii ==========
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           DELTA_FTE_T4   R-squared:                       0.018
+Model:                            OLS   Adj. R-squared:                  0.016
+Method:                 Least Squares   F-statistic:                     6.627
+Date:                Wed, 14 Oct 2026   Prob (F-statistic):             0.0104
+Time:                        21:26:57   Log-Likelihood:                -1280.2
+No. Observations:                 357   AIC:                             2564.
+Df Residuals:                     355   BIC:                             2572.
+Df Model:                           1                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -1.5764      0.697     -2.263      0.024      -2.946      -0.206
+WAGE_GAP      15.6529      6.080      2.574      0.010       3.695      27.611
+==============================================================================
+Omnibus:                       35.476   Durbin-Watson:                   2.187
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               85.937
+Skew:                          -0.488   Prob(JB):                     2.18e-19
+Kurtosis:                       5.196   Cond. No.                         13.2
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+========== MODEL iv ==========
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           DELTA_FTE_T4   R-squared:                       0.029
+Model:                            OLS   Adj. R-squared:                  0.015
+Method:                 Least Squares   F-statistic:                     2.082
+Date:                Wed, 14 Oct 2026   Prob (F-statistic):             0.0672
+Time:                        21:26:57   Log-Likelihood:                -1278.3
+No. Observations:                 357   AIC:                             2569.
+Df Residuals:                     351   BIC:                             2592.
+Df Model:                           5                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -1.3150      0.957     -1.374      0.170      -3.197       0.567
+WAGE_GAP      14.9157      6.205      2.404      0.017       2.711      27.120
+KFC            0.6590      1.292      0.510      0.610      -1.883       3.201
+ROY           -1.9122      1.308     -1.462      0.145      -4.485       0.661
+WENDYS         0.0136      1.515      0.009      0.993      -2.966       2.994
+OWNED          0.4089      1.092      0.374      0.708      -1.739       2.557
+==============================================================================
+Omnibus:                       37.935   Durbin-Watson:                   2.187
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):               93.390
+Skew:                          -0.519   Prob(JB):                     5.25e-21
+Kurtosis:                       5.281   Cond. No.                         15.4
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
+
+========== MODEL v ==========
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:           DELTA_FTE_T4   R-squared:                       0.041
+Model:                            OLS   Adj. R-squared:                  0.016
+Method:                 Least Squares   F-statistic:                     1.663
+Date:                Wed, 14 Oct 2026   Prob (F-statistic):             0.0967
+Time:                        21:26:57   Log-Likelihood:                -1275.9
+No. Observations:                 357   AIC:                             2572.
+Df Residuals:                     347   BIC:                             2611.
+Df Model:                           9                                         
+Covariance Type:            nonrobust                                         
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+const         -0.4726      1.232     -0.384      0.702      -2.896       1.951
+WAGE_GAP      11.9792      7.419      1.615      0.107      -2.613      26.571
+KFC            0.6653      1.310      0.508      0.612      -1.911       3.241
+ROY           -2.0895      1.328     -1.574      0.117      -4.701       0.522
+WENDYS         0.2705      1.532      0.177      0.860      -2.742       3.283
+OWNED          0.1596      1.110      0.144      0.886      -2.024       2.343
+SOUTHJ        -0.1266      1.212     -0.104      0.917      -2.510       2.257
+CENTRALJ      -1.3706      1.405     -0.976      0.330      -4.134       1.393
+PA1           -3.5887      1.970     -1.822      0.069      -7.463       0.286
+PA2            0.2466      1.747      0.141      0.888      -3.190       3.683
+==============================================================================
+Omnibus:                       41.092   Durbin-Watson:                   2.216
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              104.194
+Skew:                          -0.554   Prob(JB):                     2.37e-23
+Kurtosis:                       5.403   Cond. No.                         19.4
+==============================================================================
+
+Notes:
+[1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+
