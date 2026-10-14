@@ -80,21 +80,30 @@ Table 2 reports the basic characteristics of New Jersey (NJ) and Pennsylvania (P
 
 *Note:* Panel A is based on 331 New Jersey and 79 Pennsylvania stores.
 
-**Panel B: Mean (standard error), by survey wave**
+**Panel B: Wave 1 (February 1992), mean (standard error)**
 
-+----------------------------------------+-----------------+-----------------+-----------------+-----------------+
-| Variable | NJ, Wave 1 | PA, Wave 1 | NJ, Wave 2 | PA, Wave 2 |
-+========================================+=================+=================+=================+=================+
-| FTE employment | 20.44 (0.51) | 23.33 (1.35) | 21.03 (0.52) | 21.17 (0.94) |
-| Percentage full-time employees† | 28.63 (1.28) | 30.29 (2.67) | 32.01 (1.41) | 26.02 (2.77) |
-| Starting wage (\$) | 4.61 (0.02) | 4.63 (0.04) | 5.08 (0.01) | 4.62 (0.04) |
-| Wage = \$4.25 (%) | 30.51 (2.53) | 32.91 (5.32) | 0.00 | 25.32 (4.92) |
-| Wage = \$5.05 (%) | — | — | 85.50 (1.94) | 1.27 (1.27) |
-| Price of full meal (\$) | 3.35 (0.04) | 3.04 (0.07) | 3.41 (0.04) | 3.03 (0.07) |
-| Hours open (weekday) | 14.42 (0.15) | 14.53 (0.33) | 14.42 (0.15) | 14.65 (0.33) |
-| Recruiting bonus (%) | 23.56 (2.34) | 29.11 (5.14) | — | — |
-| Special recruiting program (proxy)‡ | — | — | 20.32 (2.27) | 23.38 (4.85) |
-+----------------------------------------+-----------------+-----------------+-----------------+-----------------+
+| Variable | New Jersey | Pennsylvania |
+|---|---|---|
+| FTE employment | 20.44 (0.51) | 23.33 (1.35) |
+| Percentage full-time employees† | 28.63 (1.28) | 30.29 (2.67) |
+| Starting wage (\$) | 4.61 (0.02) | 4.63 (0.04) |
+| Wage = \$4.25 (%) | 30.51 (2.53) | 32.91 (5.32) |
+| Price of full meal (\$) | 3.35 (0.04) | 3.04 (0.07) |
+| Hours open (weekday) | 14.42 (0.15) | 14.53 (0.33) |
+| Recruiting bonus (%) | 23.56 (2.34) | 29.11 (5.14) |
+
+**Panel C: Wave 2 (November 1992), mean (standard error)**
+
+| Variable | New Jersey | Pennsylvania |
+|---|---|---|
+| FTE employment | 21.03 (0.52) | 21.17 (0.94) |
+| Percentage full-time employees† | 32.01 (1.41) | 26.02 (2.77) |
+| Starting wage (\$) | 5.08 (0.01) | 4.62 (0.04) |
+| Wage = \$4.25 (%) | 0.00 | 25.32 (4.92) |
+| Wage = \$5.05 (%) | 85.50 (1.94) | 1.27 (1.27) |
+| Price of full meal (\$) | 3.41 (0.04) | 3.03 (0.07) |
+| Hours open (weekday) | 14.42 (0.15) | 14.65 (0.33) |
+| Special recruiting program (proxy)‡ | 20.32 (2.27) | 23.38 (4.85) |
 
 † The full-time-employee percentage uses an alternative definition that excludes managers. ‡ The Wave-2 recruiting measure uses `SPECIAL2` as a proxy and is not equivalent to the paper's cash recruiting bonus.
 
@@ -118,31 +127,45 @@ Overall, the replicated figure follows the same main pattern as the original: af
 
 One clarification is worth making: the figure uses 10-cent *bins*, so a share such as 89.31% refers to all wages in the \$5.00–\$5.10 range, not only wages exactly equal to \$5.05. The percentages also use a different denominator from Table 2 — they are shares of stores with a valid starting wage in the relevant state and wave (for example, 318 valid observations in New Jersey in November 1992), whereas Table 2's "wage = \$4.25" and "wage = \$5.05" rows use all stores as the denominator. These two definitions therefore do not have to coincide.
 
+
 ### 4.3 Table 3: Employment Changes
 
-Table 3 compares the change in FTE employment in New Jersey and Pennsylvania around the increase. The replication is very close to the original paper's main results.
+Table 3 compares the change in full-time-equivalent (FTE) employment in New Jersey (NJ) and Pennsylvania (PA) before and after the minimum-wage increase. The replication closely reproduces the main results reported by Card and Krueger (1994).
 
 **Table 3. Employment Changes**
 
-+------------------------+--------+--------+----------+--------+-----------+--------+-------------+-------------+
-|                        | PA     | NJ     | NJ − PA  | Low    | Midrange  | High   | Low − High  | Mid − High  |
-+========================+========+========+==========+========+===========+========+=============+=============+
-| FTE before             | 23.33  | 20.44  | −2.89    | 19.56  | 20.08     | 22.25  | −2.69       | −2.17       |
-| FTE after              | 21.17  | 21.03  | −0.14    | 20.88  | 20.96     | 20.21  | 0.66        | 0.74        |
-| Change in mean FTE     | −2.17  | 0.59   | **2.75** | 1.32   | 0.87      | −2.04  | 3.36        | 2.91        |
-| Balanced sample        | −2.28  | 0.47   | **2.75** | 1.20   | 0.71      | −2.16  | 3.36        | 2.87        |
-| Temp. closures = 0     | −2.28  | 0.23   | **2.51** | 0.90   | 0.49      | −2.39  | 3.29        | 2.88        |
-+------------------------+--------+--------+----------+--------+-----------+--------+-------------+-------------+
+**Panel A: Employment Changes in New Jersey and Pennsylvania**
 
-*Notes:* "Low", "Midrange", and "High" split New Jersey stores by their pre-policy starting wage. The DID estimate is the NJ − PA column. Sample sizes (PA / NJ; Low / Midrange / High) are: FTE before 77 / 321 (97 / 137 / 71); FTE after 77 / 319 (98 / 135 / 69); balanced sample 75 / 309 (94 / 132 / 67); temp. closures = 0 75 / 313 (95 / 134 / 68).
+| Measure | PA | NJ | NJ − PA |
+|:---|---:|---:|---:|
+| FTE before | 23.33 | 20.44 | −2.89 |
+| FTE after | 21.17 | 21.03 | −0.14 |
+| Change in mean FTE | −2.17 | 0.59 | **2.75** |
+| Balanced-sample change | −2.28 | 0.47 | **2.75** |
+| Temporary closures = 0 | −2.28 | 0.23 | **2.51** |
 
-Before the increase, average FTE employment was 20.44 in New Jersey and 23.33 in Pennsylvania; afterwards, 21.03 and 21.17. New Jersey's average employment therefore rose by about 0.59 FTE, while Pennsylvania's fell by about 2.17 FTE. The resulting difference-in-differences estimate is 2.754 FTE, very close to the paper's reported 2.76.
+**Panel B: Employment Changes by Initial Wage Group in New Jersey**
 
-The result is similar under alternative sample treatments. The balanced sample gives a DID estimate of 2.750 FTE, in agreement with the paper; setting the Wave-2 employment of temporarily closed restaurants to zero gives 2.509 FTE, close to the paper's 2.51.
+| Measure | Low | Midrange | High | Low − High | Mid − High |
+|:---|---:|---:|---:|---:|---:|
+| FTE before | 19.56 | 20.08 | 22.25 | −2.69 | −2.17 |
+| FTE after | 20.88 | 20.96 | 20.21 | 0.66 | 0.74 |
+| Change in mean FTE | 1.32 | 0.87 | −2.04 | 3.36 | 2.91 |
+| Balanced-sample change | 1.20 | 0.71 | −2.16 | 3.36 | 2.87 |
+| Temporary closures = 0 | 0.90 | 0.49 | −2.39 | 3.29 | 2.88 |
 
-Splitting New Jersey stores by their pre-policy starting wage, employment at low-wage and midrange-wage stores rose by about 1.32 and 0.87 FTE respectively, while employment at high-wage stores fell by about 2.04 FTE. This is consistent with the between-group pattern reported in the paper.
+*Notes:* Panel A compares FTE employment between New Jersey and Pennsylvania. The NJ − PA column reports the difference between the two states, with the employment-change rows representing the difference-in-differences (DID) estimates. Panel B divides New Jersey restaurants into low-, midrange-, and high-wage groups based on their pre-policy starting wages. The balanced-sample specification includes restaurants with valid employment observations in both survey waves, while the temporary-closure specification assigns zero Wave-2 employment to temporarily closed restaurants.
 
-Overall, the replication reproduces the main employment changes and DID results of Table 3 well. However, some standard errors are computed approximately, without fully accounting for the covariance between the two surveys within the same restaurant, so not all statistics are fully replicated.
+Sample sizes (PA / NJ; Low / Midrange / High): FTE before 77 / 321 (97 / 137 / 71); FTE after 77 / 319 (98 / 135 / 69); balanced-sample change 75 / 309 (94 / 132 / 67); temporary closures = 0: 75 / 313 (95 / 134 / 68).
+
+Before the minimum-wage increase, average FTE employment was 20.44 in New Jersey and 23.33 in Pennsylvania. After the increase, the corresponding figures were 21.03 and 21.17. New Jersey's average employment increased by approximately 0.59 FTE, while Pennsylvania's decreased by approximately 2.17 FTE. The resulting DID estimate is 2.754 FTE, very close to the original paper's reported value of 2.76.
+
+The results remain similar under alternative sample treatments. The balanced-sample DID estimate is 2.750 FTE, matching the original paper, while assigning zero employment to temporarily closed restaurants produces an estimate of 2.509 FTE, close to the paper's 2.51.
+
+Within New Jersey, employment increased by approximately 1.32 and 0.87 FTE in low- and midrange-wage restaurants, respectively, while high-wage restaurants experienced a decrease of approximately 2.04 FTE. These findings are consistent with the employment patterns reported in the original paper.
+
+Overall, the replication closely reproduces the main employment changes and DID estimates in Table 3. However, some standard errors are calculated approximately without fully accounting for within-store covariance across the two survey waves. Therefore, not all statistical measures are exactly replicated.
+
 
 ### 4.4 Table 4: Reduced-Form Regression Results
 
