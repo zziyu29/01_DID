@@ -2,7 +2,6 @@
 
 **ECON6067 Individual Project**
 
----
 
 ## 1. Introduction
 
@@ -16,7 +15,6 @@ Card and Krueger (1994) study this question with a natural experiment. In April 
 
 This project uses Python to reproduce the paper's Table 2–4 and Figure 1, and compares the results with the original. In addition, it carries out an independent extension that tests whether the employment change associated with the minimum-wage increase differs across four fast-food chains — Burger King, KFC, Roy Rogers, and Wendy's. The objectives are to verify the paper's main findings and to establish a transparent, reproducible empirical workflow.
 
----
 
 ## 2. Data Sources, Sample Construction, and Variable Definitions
 
@@ -48,7 +46,6 @@ New Jersey is the treatment group (`STATE = 1`) and Pennsylvania the control gro
 
 Following the replication rules, the six restaurants that permanently closed by the second survey (`STATUS2 = 3`) are assigned a Wave-2 employment of zero, while the four temporarily closed restaurants (`STATUS2 = 2, 4, 5`) are treated as missing. Table 3 also considers an alternative specification in which temporarily closed restaurants are assigned a Wave-2 employment of zero. The robustness check of the independent extension excludes the permanently closed restaurants. These choices must be stated explicitly, because sample construction and the treatment of closures affect the estimated employment change.
 
----
 
 ## 3. Empirical Design
 
@@ -62,7 +59,6 @@ The study also estimates OLS regressions of the employment change, using either 
 
 The causal interpretation of the DID estimates relies on the parallel-trends assumption: in the absence of the minimum-wage increase, employment in New Jersey and Pennsylvania would have followed similar trends. Because the data contain only one pre-policy survey, this assumption cannot be tested directly.
 
----
 
 ## 4. Core Replication Results and Comparison with the Original Paper
 
@@ -188,7 +184,6 @@ The coefficients on the New Jersey dummy in models (i) and (ii) are 2.33 and 2.3
 
 Overall, the replication reproduces the main Table 4 results closely, with only a small difference in model (v). The main coefficients are positive in all models, consistent with the paper's finding of no employment decline in New Jersey relative to Pennsylvania. However, a positive coefficient does not by itself imply a statistically significant positive employment effect; the causal interpretation still depends on the DID identifying assumptions.
 
----
 
 ## 5. Independent Extension
 
@@ -268,7 +263,6 @@ The joint Wald F-test gives F = 2.4087 with p = 0.0669, compared with the baseli
 
 Overall, excluding the permanently closed restaurants does not change the main statistical conclusion, which suggests that the result is somewhat robust to this sample choice. However, this check does not establish robustness to other model specifications or data treatments.
 
----
 
 ## 6. Validation, Limitations and Conclusion
 
@@ -296,20 +290,8 @@ The independent extension finds that the employment response may differ across c
 
 Despite some remaining replication differences and limitations, this project shows that the paper's main empirical results can be reproduced through a transparent and reproducible Python workflow.
 
----
 
 ## 7. References
 
 Card, David, and Alan B. Krueger. 1994. "Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania." *American Economic Review* 84(4): 772–793.
 
-## 8. Project Documentation
-
-The replication is implemented and documented in the following project files (not academic references):
-
-- `code/run_all.py` — the single script that runs the entire replication.
-- `data/raw/public.csv` — the raw store-level survey data.
-- `DATA_DICTIONARY.md` — column definitions.
-- `README.md` — running instructions and verification checklist.
-- `skills/SKILL.md` — reusable recipes for the tables and figures.
-- `AI_USE_DISCLOSURE.md` — AI use disclosure.
-- `outputs/tables/` and `outputs/figures/` — generated tables, regression logs, and figures.
