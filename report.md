@@ -1,7 +1,7 @@
-# Replication of Card and Krueger (1994): Minimum Wages and Employment
-
 **ECON6067 Individual Project**
 
+
+# Replication of Card and Krueger (1994): Minimum Wages and Employment
 
 ## 1. Introduction
 
@@ -9,7 +9,7 @@
 
 The effect of the minimum wage on employment is a central question in labour economics. In the standard competitive labour-market model, a higher minimum wage raises firms' labour costs and is therefore predicted to reduce employment. However, some empirical studies find no clear negative employment effect, which calls this traditional prediction into question.
 
-Card and Krueger (1994) study this question with a natural experiment. In April 1992, New Jersey raised its minimum wage from $4.25 to $5.05 per hour, while neighbouring Pennsylvania left its minimum wage unchanged. The authors use a difference-in-differences (DID) design to compare the employment changes of fast-food restaurants in the two states before and after the policy change.
+Card and Krueger (1994) study this question with a natural experiment. In April 1992, New Jersey raised its minimum wage from \$4.25 to \$5.05 per hour, while neighbouring Pennsylvania left its minimum wage unchanged. The authors use a difference-in-differences (DID) design to compare the employment changes of fast-food restaurants in the two states before and after the policy change.
 
 ### 1.2 Replication Objectives
 
@@ -40,7 +40,7 @@ $$
 \Delta FTE_i = FTE_{i,2} - FTE_{i,1}
 $$
 
-New Jersey is the treatment group (`STATE = 1`) and Pennsylvania the control group (`STATE = 0`). For Table 4, the initial wage gap measures how much a restaurant's starting wage would have to rise, in proportional terms, to reach the new minimum wage of $5.05, using the pre-policy starting wage as the denominator. The wage gap is set to zero for Pennsylvania restaurants.
+New Jersey is the treatment group (`STATE = 1`) and Pennsylvania the control group (`STATE = 0`). For Table 4, the initial wage gap measures how much a restaurant's starting wage would have to rise, in proportional terms, to reach the new minimum wage of \$5.05, using the pre-policy starting wage as the denominator. The wage gap is set to zero for Pennsylvania restaurants.
 
 ### 2.4 Data Cleaning and Closure Treatment
 
@@ -49,7 +49,7 @@ Following the replication rules, the six restaurants that permanently closed by 
 
 ## 3. Empirical Design
 
-This study follows the difference-in-differences (DID) design of Card and Krueger (1994). New Jersey is the treatment group, whose minimum wage rose from $4.25 to $5.05 per hour in April 1992; Pennsylvania is the control group, whose minimum wage remained unchanged. The DID estimator measures the policy effect by comparing the change in FTE employment in the two states:
+This study follows the difference-in-differences (DID) design of Card and Krueger (1994). New Jersey is the treatment group, whose minimum wage rose from \$4.25 to \$5.05 per hour in April 1992; Pennsylvania is the control group, whose minimum wage remained unchanged. The DID estimator measures the policy effect by comparing the change in FTE employment in the two states:
 
 $$
 DID = (FTE_{NJ,\text{after}} - FTE_{NJ,\text{before}}) - (FTE_{PA,\text{after}} - FTE_{PA,\text{before}})
@@ -80,34 +80,25 @@ Table 2 reports the basic characteristics of New Jersey (NJ) and Pennsylvania (P
 
 *Note:* Panel A is based on 331 New Jersey and 79 Pennsylvania stores.
 
-**Panel B: Wave 1 (February 1992), mean (standard error)**
+**Panel B: Mean (standard error), by survey wave**
 
-| Variable | New Jersey | Pennsylvania |
-|---|---|---|
-| FTE employment | 20.44 (0.51) | 23.33 (1.35) |
-| Percentage full-time employees† | 28.63 (1.28) | 30.29 (2.67) |
-| Starting wage ($) | 4.61 (0.02) | 4.63 (0.04) |
-| Wage = $4.25 (%) | 30.51 (2.53) | 32.91 (5.32) |
-| Price of full meal ($) | 3.35 (0.04) | 3.04 (0.07) |
-| Hours open (weekday) | 14.42 (0.15) | 14.53 (0.33) |
-| Recruiting bonus (%) | 23.56 (2.34) | 29.11 (5.14) |
-
-**Panel C: Wave 2 (November 1992), mean (standard error)**
-
-| Variable | New Jersey | Pennsylvania |
-|---|---|---|
-| FTE employment | 21.03 (0.52) | 21.17 (0.94) |
-| Percentage full-time employees† | 32.01 (1.41) | 26.02 (2.77) |
-| Starting wage ($) | 5.08 (0.01) | 4.62 (0.04) |
-| Wage = $4.25 (%) | 0.00 | 25.32 (4.92) |
-| Wage = $5.05 (%) | 85.50 (1.94) | 1.27 (1.27) |
-| Price of full meal ($) | 3.41 (0.04) | 3.03 (0.07) |
-| Hours open (weekday) | 14.42 (0.15) | 14.65 (0.33) |
-| Special recruiting program (proxy)‡ | 20.32 (2.27) | 23.38 (4.85) |
++----------------------------------------+-----------------+-----------------+-----------------+-----------------+
+| Variable | NJ, Wave 1 | PA, Wave 1 | NJ, Wave 2 | PA, Wave 2 |
++========================================+=================+=================+=================+=================+
+| FTE employment | 20.44 (0.51) | 23.33 (1.35) | 21.03 (0.52) | 21.17 (0.94) |
+| Percentage full-time employees† | 28.63 (1.28) | 30.29 (2.67) | 32.01 (1.41) | 26.02 (2.77) |
+| Starting wage (\$) | 4.61 (0.02) | 4.63 (0.04) | 5.08 (0.01) | 4.62 (0.04) |
+| Wage = \$4.25 (%) | 30.51 (2.53) | 32.91 (5.32) | 0.00 | 25.32 (4.92) |
+| Wage = \$5.05 (%) | — | — | 85.50 (1.94) | 1.27 (1.27) |
+| Price of full meal (\$) | 3.35 (0.04) | 3.04 (0.07) | 3.41 (0.04) | 3.03 (0.07) |
+| Hours open (weekday) | 14.42 (0.15) | 14.53 (0.33) | 14.42 (0.15) | 14.65 (0.33) |
+| Recruiting bonus (%) | 23.56 (2.34) | 29.11 (5.14) | — | — |
+| Special recruiting program (proxy)‡ | — | — | 20.32 (2.27) | 23.38 (4.85) |
++----------------------------------------+-----------------+-----------------+-----------------+-----------------+
 
 † The full-time-employee percentage uses an alternative definition that excludes managers. ‡ The Wave-2 recruiting measure uses `SPECIAL2` as a proxy and is not equivalent to the paper's cash recruiting bonus.
 
-Before the increase, average FTE employment was 20.44 in New Jersey and 23.33 in Pennsylvania; after the increase the corresponding figures were 21.03 and 21.17. Average starting wages were about $4.61 and $4.63 per hour in the two states before the increase; afterwards New Jersey's rose to $5.08 while Pennsylvania's remained at about $4.62.
+Before the increase, average FTE employment was 20.44 in New Jersey and 23.33 in Pennsylvania; after the increase the corresponding figures were 21.03 and 21.17. Average starting wages were about \$4.61 and \$4.63 per hour in the two states before the increase; afterwards New Jersey's rose to \$5.08 while Pennsylvania's remained at about \$4.62.
 
 Some variables are reproduced with differences from the original. First, the full-time-employee percentage computed here excludes managers, which differs from the paper's definition. Second, the Wave-2 recruiting measure uses `SPECIAL2` as a proxy. Although the replicated proportions (20.32% for New Jersey and 23.38% for Pennsylvania) are very close to the paper's 20.3% and 23.4%, this variable does not necessarily measure the same recruiting incentive, so it cannot be treated as a fully identical replication.
 
@@ -115,17 +106,17 @@ Some variables are reproduced with differences from the original. First, the ful
 
 Figure 1 compares the distribution of starting wages in New Jersey and Pennsylvania before and after the increase. The replication uses 10-cent wage bins, with percentages computed from the number of restaurants with a valid starting wage in each state and survey period.
 
-![Distribution of starting wages, by state and wave (10-cent bins)](outputs/figures/figure1_replication.png)
+![](outputs/figures/figure1_replication.png)
 
 **Figure 1. Distribution of Starting Wages.** Starting wages in 10-cent bins, separately by state and survey wave. Source: `outputs/figures/figure1_replication.png`.
 
-In February 1992, starting wages in both states were concentrated near $4.25 per hour: 32.17% of New Jersey and 34.21% of Pennsylvania restaurants fell in that bin. After the increase, the New Jersey distribution shifted clearly toward $5.05. By November 1992, 89.31% (284/318) of New Jersey's valid wage observations were in the bin centred at $5.05, compared with only 15.92% before the increase. At the same time, the share of New Jersey restaurants in the $4.25 bin fell to 0%.
+In February 1992, starting wages in both states were concentrated near \$4.25 per hour: 32.17% of New Jersey and 34.21% of Pennsylvania restaurants fell in that bin. After the increase, the New Jersey distribution shifted clearly toward \$5.05. By November 1992, 89.31% (284/318) of New Jersey's valid wage observations were in the bin centred at \$5.05, compared with only 15.92% before the increase. At the same time, the share of New Jersey restaurants in the \$4.25 bin fell to 0%.
 
-In contrast, Pennsylvania's distribution changed little. The share in the $4.25 bin fell from 34.21% to 28.17%, and the share in the $5.05 bin changed from 26.32% to 19.72%.
+In contrast, Pennsylvania's distribution changed little. The share in the \$4.25 bin fell from 34.21% to 28.17%, and the share in the \$5.05 bin changed from 26.32% to 19.72%.
 
 Overall, the replicated figure follows the same main pattern as the original: after the increase, New Jersey's starting-wage distribution shifted upward while Pennsylvania's remained relatively stable. This indicates that the policy change is closely associated with a rise in New Jersey starting wages, although the wage distribution alone cannot tell us how employment responded.
 
-One clarification is worth making: the figure uses 10-cent *bins*, so a share such as 89.31% refers to all wages in the $5.00–$5.10 range, not only wages exactly equal to $5.05. The percentages also use a different denominator from Table 2 — they are shares of stores with a valid starting wage in the relevant state and wave (for example, 318 valid observations in New Jersey in November 1992), whereas Table 2's "wage = $4.25" and "wage = $5.05" rows use all stores as the denominator. These two definitions therefore do not have to coincide.
+One clarification is worth making: the figure uses 10-cent *bins*, so a share such as 89.31% refers to all wages in the \$5.00–\$5.10 range, not only wages exactly equal to \$5.05. The percentages also use a different denominator from Table 2 — they are shares of stores with a valid starting wage in the relevant state and wave (for example, 318 valid observations in New Jersey in November 1992), whereas Table 2's "wage = \$4.25" and "wage = \$5.05" rows use all stores as the denominator. These two definitions therefore do not have to coincide.
 
 ### 4.3 Table 3: Employment Changes
 
@@ -133,15 +124,17 @@ Table 3 compares the change in FTE employment in New Jersey and Pennsylvania aro
 
 **Table 3. Employment Changes**
 
-| | PA | NJ | NJ − PA | Low | Midrange | High | Low − High | Mid − High |
-|---|---|---|---|---|---|---|---|---|
-| FTE before | 23.33 | 20.44 | −2.89 | 19.56 | 20.08 | 22.25 | −2.69 | −2.17 |
-| FTE after | 21.17 | 21.03 | −0.14 | 20.88 | 20.96 | 20.21 | 0.66 | 0.74 |
-| Change in mean FTE | −2.17 | 0.59 | **2.75** | 1.32 | 0.87 | −2.04 | 3.36 | 2.91 |
-| Balanced-sample change | −2.28 | 0.47 | **2.75** | 1.20 | 0.71 | −2.16 | 3.36 | 2.87 |
-| Temporary closures = 0 | −2.28 | 0.23 | **2.51** | 0.90 | 0.49 | −2.39 | 3.29 | 2.88 |
++------------------------+--------+--------+----------+--------+-----------+--------+-------------+-------------+
+|                        | PA     | NJ     | NJ − PA  | Low    | Midrange  | High   | Low − High  | Mid − High  |
++========================+========+========+==========+========+===========+========+=============+=============+
+| FTE before             | 23.33  | 20.44  | −2.89    | 19.56  | 20.08     | 22.25  | −2.69       | −2.17       |
+| FTE after              | 21.17  | 21.03  | −0.14    | 20.88  | 20.96     | 20.21  | 0.66        | 0.74        |
+| Change in mean FTE     | −2.17  | 0.59   | **2.75** | 1.32   | 0.87      | −2.04  | 3.36        | 2.91        |
+| Balanced sample        | −2.28  | 0.47   | **2.75** | 1.20   | 0.71      | −2.16  | 3.36        | 2.87        |
+| Temp. closures = 0     | −2.28  | 0.23   | **2.51** | 0.90   | 0.49      | −2.39  | 3.29        | 2.88        |
++------------------------+--------+--------+----------+--------+-----------+--------+-------------+-------------+
 
-*Notes:* "Low", "Midrange", and "High" split New Jersey stores by their pre-policy starting wage. The DID estimate is the NJ − PA column. Sample sizes (PA / NJ; Low / Midrange / High) are: FTE before 77 / 321 (97 / 137 / 71); FTE after 77 / 319 (98 / 135 / 69); balanced-sample change 75 / 309 (94 / 132 / 67); temporary closures = 0 75 / 313 (95 / 134 / 68).
+*Notes:* "Low", "Midrange", and "High" split New Jersey stores by their pre-policy starting wage. The DID estimate is the NJ − PA column. Sample sizes (PA / NJ; Low / Midrange / High) are: FTE before 77 / 321 (97 / 137 / 71); FTE after 77 / 319 (98 / 135 / 69); balanced sample 75 / 309 (94 / 132 / 67); temp. closures = 0 75 / 313 (95 / 134 / 68).
 
 Before the increase, average FTE employment was 20.44 in New Jersey and 23.33 in Pennsylvania; afterwards, 21.03 and 21.17. New Jersey's average employment therefore rose by about 0.59 FTE, while Pennsylvania's fell by about 2.17 FTE. The resulting difference-in-differences estimate is 2.754 FTE, very close to the paper's reported 2.76.
 
@@ -222,7 +215,7 @@ The estimated NJ–PA employment-change differences vary across the four chains.
 | Roy Rogers | 2.168 | 2.232 | 0.331 | [−2.207, 6.544] |
 | Wendy's | 3.832 | 3.320 | 0.248 | [−2.674, 10.339] |
 
-![Chain-specific NJ−PA employment differences with 95% confidence intervals](outputs/figures/extension_chain_effects.png)
+![](outputs/figures/extension_chain_effects.png)
 
 **Extension Figure 1. Chain-Specific Employment Effects.** Point estimates and 95% robust confidence intervals for each chain's NJ−PA difference in the change in FTE employment. Source: `outputs/figures/extension_chain_effects.png`.
 
