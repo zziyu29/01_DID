@@ -28,7 +28,8 @@ In April 1992, New Jersey raised its minimum wage from $4.25 to $5.05, while nei
 ├── skills/SKILL.md           # reusable recipes for each table and figure
 ├── DATA_DICTIONARY.md        # column definitions for public.csv
 ├── AI_USE_DISCLOSURE.md      # how AI was used, checked, and corrected
-└── README.md                 # this file
+├── README.md                 # project overview and reproduction instructions
+└── report.pdf                # final empirical report in PDF
 ```
 
 ## Requirements
@@ -44,9 +45,9 @@ python3 -m pip install numpy pandas scipy matplotlib statsmodels
 
 ## Data
 
-The raw store-level survey data is read from `data/raw/public.csv` (410
-observations × 46 columns; see `DATA_DICTIONARY.md` for column definitions). The
-script writes per-table analysis datasets to `data/processed/`.
+The raw store-level survey dataset, `data/raw/public.csv`, contains 410 restaurant observations and 46 variables. Variable definitions are documented in `DATA_DICTIONARY.md`.
+
+The replication script reads this dataset and generates intermediate analysis files in `data/processed/`.
 
 ## Running the replication
 
@@ -71,6 +72,7 @@ procedure, prints diagnostics, and writes its outputs.
 3. **Table 2** — compute NJ vs PA means, standard errors, and Welch t-tests for store types and Wave-1 / Wave-2 characteristics; write `table2_replication.csv` and `table2_comparison.csv`.
 4. **Figure 1** — bin starting wages into 10-cent ranges from $4.20 to $5.60 and plot the NJ vs PA distribution for each wave; write `figure1_replication.png/.pdf` and the underlying distribution data.
 5. **Table 3** — split NJ stores into low / midrange / high initial-wage groups; compute employment before/after and the change under alternative closure treatments; write `table3_replication.csv`, `table3_comparison.csv`, and `table3_sample_sizes.csv`.
+    In the final report, Table 3 is presented in two panels: Panel A compares employment changes in NJ and PA, including DID estimates; Panel B compares employment changes across initial-wage groups within NJ. Both panels use the same underlying replication results.
 6. **Table 4** — build the initial wage gap, select the 357-observation regression sample, and estimate five OLS models; write the paper-formatted table, the comparisons, and the regression details.
 7. **Extension** — regress the change in FTE on state × chain interactions with HC1 robust standard errors, run a joint Wald test, plot chain-specific NJ−PA differences, and re-estimate excluding permanently closed restaurants.
 
