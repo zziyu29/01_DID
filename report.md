@@ -3,6 +3,7 @@
 
 # Replication of Card and Krueger (1994): Minimum Wages and Employment
 
+
 ## 1. Introduction
 
 ### 1.1 Research Question and Motivation
@@ -62,6 +63,7 @@ The causal interpretation of the DID estimates relies on the parallel-trends ass
 
 ## 4. Core Replication Results and Comparison with the Original Paper
 
+
 ### 4.1 Table 2: Descriptive Statistics
 
 Table 2 reports the basic characteristics of New Jersey (NJ) and Pennsylvania (PA) fast-food restaurants before and after the increase. The replication reproduces most of the paper's descriptive statistics, including restaurant characteristics, FTE employment, starting wages, meal prices, and hours of operation.
@@ -110,6 +112,7 @@ Table 2 reports the basic characteristics of New Jersey (NJ) and Pennsylvania (P
 Before the increase, average FTE employment was 20.44 in New Jersey and 23.33 in Pennsylvania; after the increase the corresponding figures were 21.03 and 21.17. Average starting wages were about \$4.61 and \$4.63 per hour in the two states before the increase; afterwards New Jersey's rose to \$5.08 while Pennsylvania's remained at about \$4.62.
 
 Some variables are reproduced with differences from the original. First, the full-time-employee percentage computed here excludes managers, which differs from the paper's definition. Second, the Wave-2 recruiting measure uses `SPECIAL2` as a proxy. Although the replicated proportions (20.32% for New Jersey and 23.38% for Pennsylvania) are very close to the paper's 20.3% and 23.4%, this variable does not necessarily measure the same recruiting incentive, so it cannot be treated as a fully identical replication.
+
 
 ### 4.2 Figure 1: Distribution of Starting Wages
 
